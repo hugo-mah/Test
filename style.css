@@ -672,7 +672,7 @@ a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -697,6 +697,9 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 h2 {
@@ -822,6 +825,12 @@ h4 {
     background-image: url("img/image-de-presentation.webp");
 }
 
+@media (max-width: 768px) {
+    .bg-presentation{
+        background-image: none;
+    }
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -862,8 +871,9 @@ h4 {
         width: 100%;
     }
     .b-parallax {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
+
     .page-container,
     #hero-bloc {
         overflow-x: hidden;

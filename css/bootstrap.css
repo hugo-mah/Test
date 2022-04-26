@@ -2012,7 +2012,8 @@ pre code {
 
 .row {
     margin-right: -15px;
-    margin-left: -15px
+    margin-left: -15px;
+    margin-top: 10px;
 }
 
 .col-lg-1,
@@ -2068,6 +2069,14 @@ pre code {
     padding-right: 15px;
     padding-left: 15px
 }
+
+
+@media (max-width:768px) {
+    .col-sm-3{
+        width: 20%;
+    }
+}
+
 
 .col-xs-1,
 .col-xs-10,
